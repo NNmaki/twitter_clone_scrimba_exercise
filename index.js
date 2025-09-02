@@ -20,7 +20,13 @@ document.addEventListener('click', function(e){
 function handleLikeClick(tweetId){
     console.log(tweetId)
 
-    const targetTweetObj = tweetId
+    const targetTweetObj = tweetsData.filter(function() {
+        if (tweetId) {
+            return 
+        }
+    })
+
+
     for (tweetId of tweetsData) {
         tweetsData.likes += 1
 
